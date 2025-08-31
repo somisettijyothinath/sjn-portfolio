@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import "./App.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration (ms)
+      once: false,    // if true, animation runs only once
+    });
+  }, []);
+   return (
+    <div className="app-container">
+      <Header />
+      <div className="content">
+      <Home />
+      </div>
+      {/* Gallery, Blog, Resume components will come here */}
+      <Footer />
     </div>
   );
 }
