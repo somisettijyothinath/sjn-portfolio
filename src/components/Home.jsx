@@ -220,113 +220,159 @@ useEffect(() => {
           <h3 className="heading animated fadeIn">My <span>Resume</span> </h3>
         </div>
       </div>
-      <div className="row " data-aos="fade-right" data-aos-duration="1000">
+      <div className="row resume-row" data-aos="fade-up" data-aos-duration="1000">
+        {/* ===== Experience ===== */}
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div>
-            <h4 className="maintitle text-center">Education</h4>
-          </div>
-          <div className="resume-card p-4 d-flex " data-aos="zoom-in" data-aos-duration="1000">
-            <div className="resume-icon">
-              <i className="fa-solid fa-user-graduate"></i>
-            </div>
-            <div className="resume">
-              <p>2021 - 2023 | 87.5%</p>
-              <h5>Master of Computer Applications (MCA)</h5>
-              <h6>Siddharth Institute of Engineering &amp; Technology, Puttur</h6>
-              <p>Completed Master's degree with a strong focus on software development,
-                 database management, and full-stack technologies including Java, Spring Boot, and React.</p>
-            </div>
-          </div>
+          <h4 className="maintitle text-center">
+            <i className="fa-solid fa-briefcase me-2"></i>Experience
+          </h4>
+          <div className="timeline">
 
-          <div className="resume-card p-4 d-flex mt-4 " data-aos="zoom-in" data-aos-duration="1000">
-            <div className="resume-icon">
-              <i className="fa-solid fa-user-graduate"></i>
+            <div className="timeline-item" data-aos="fade-left" data-aos-duration="800">
+              <span className="timeline-dot"><i className="fa-solid fa-code"></i></span>
+              <div className="timeline-card">
+                <span className="timeline-date">Jan 2026 - Present</span>
+                <h5>Java Backend Developer</h5>
+                <h6>SutiERP &amp; SutiBooks · SutiSoft Inc, Hyderabad</h6>
+                <p>Building SutiERP, a central integration hub unifying 6+ SutiSoft products,
+                   and cloud accounting modules for SutiBooks. Designing independently deployable
+                   microservices with JWT &amp; OAuth2 security and RESTful APIs for real-time
+                   financial data synchronization.</p>
+                <div className="tech-tags">
+                  <span>Java 21/25</span><span>Spring Boot</span><span>Microservices</span>
+                  <span>React TS</span><span>PostgreSQL</span>
+                </div>
+              </div>
             </div>
-            <div className="resume">
-              <p>2018 - 2021 | 81%</p>
-              <h5>Bachelor of Science (B.Sc. Computers)</h5>
-              <h6>Himaja Degree College, Puttur</h6>
-              <p>Built a solid foundation in computer science fundamentals, programming,
-                 and analytical problem-solving.</p>
+
+            <div className="timeline-item" data-aos="fade-left" data-aos-duration="800">
+              <span className="timeline-dot"><i className="fa-solid fa-plug"></i></span>
+              <div className="timeline-card">
+                <span className="timeline-date">Dec 2024 - Dec 2025</span>
+                <h5>Junior Software Developer</h5>
+                <h6>SutiAP &amp; SutiAPI · SutiSoft Inc, Hyderabad</h6>
+                <p>Architected microservices-based integrations for QuickBooks Online, Sage Intacct,
+                   and NetSuite using OAuth2 via SutiAPI, enabling bi-directional financial data sync.
+                   Owned end-to-end feature development with responsive React TypeScript UI and
+                   optimized API performance.</p>
+                <div className="tech-tags">
+                  <span>OAuth2</span><span>SutiAPI</span><span>QuickBooks</span>
+                  <span>Sage Intacct</span><span>NetSuite</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item" data-aos="fade-left" data-aos-duration="800">
+              <span className="timeline-dot"><i className="fa-solid fa-laptop-code"></i></span>
+              <div className="timeline-card">
+                <span className="timeline-date">May 2024 - Nov 2024</span>
+                <h5>Software Developer Trainee</h5>
+                <h6>SutiAP · SutiSoft Inc, Hyderabad</h6>
+                <p>Contributed to SutiAP, a monolithic Spring MVC + JSP application for Accounts
+                   Payable automation. Developed JSP views and Spring MVC controllers, wrote optimized
+                   SQL/PL-SQL queries and procedures, and performed JUnit testing and code reviews.</p>
+                <div className="tech-tags">
+                  <span>Spring MVC</span><span>JSP</span><span>Hibernate</span>
+                  <span>Oracle/MySQL</span><span>JUnit</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* ===== Education ===== */}
+        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <h4 className="maintitle text-center">
+            <i className="fa-solid fa-graduation-cap me-2"></i>Education
+          </h4>
+          <div className="timeline">
+
+            <div className="timeline-item" data-aos="fade-right" data-aos-duration="800">
+              <span className="timeline-dot"><i className="fa-solid fa-user-graduate"></i></span>
+              <div className="timeline-card">
+                <span className="timeline-date">2021 - 2023 <b className="score-badge">87.5%</b></span>
+                <h5>Master of Computer Applications (MCA)</h5>
+                <h6>Siddharth Institute of Engineering &amp; Technology, Puttur</h6>
+                <p>Specialized in software development, database management, and full-stack
+                   technologies including Java, Spring Boot, and React.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item" data-aos="fade-right" data-aos-duration="800">
+              <span className="timeline-dot"><i className="fa-solid fa-user-graduate"></i></span>
+              <div className="timeline-card">
+                <span className="timeline-date">2018 - 2021 <b className="score-badge">81%</b></span>
+                <h5>Bachelor of Science (B.Sc. Computers)</h5>
+                <h6>Himaja Degree College, Puttur</h6>
+                <p>Built a solid foundation in computer science fundamentals, programming,
+                   and analytical problem-solving.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item" data-aos="fade-right" data-aos-duration="800">
+              <span className="timeline-dot"><i className="fa-solid fa-school"></i></span>
+              <div className="timeline-card">
+                <span className="timeline-date">2016 - 2018 <b className="score-badge">86.5%</b></span>
+                <h5>Intermediate (MPC)</h5>
+                <h6>Himaja Junior College, Puttur</h6>
+                <p>Studied Mathematics, Physics, and Chemistry, developing strong logical
+                   and analytical thinking skills.</p>
+              </div>
+            </div>
+
+            <div className="timeline-item" data-aos="fade-right" data-aos-duration="800">
+              <span className="timeline-dot"><i className="fa-solid fa-book"></i></span>
+              <div className="timeline-card">
+                <span className="timeline-date">2016 <b className="score-badge">83%</b></span>
+                <h5>SSC (10th Grade)</h5>
+                <h6>Z.P. High School, T.K.M. Peta</h6>
+                <p>Completed secondary education with distinction, laying the groundwork
+                   for a career in technology.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* ===== Key Achievements ===== */}
+      <div className="achievements" data-aos="fade-up" data-aos-duration="1000">
+        <h4 className="maintitle text-center">
+          <i className="fa-solid fa-trophy me-2"></i>Key Achievements
+        </h4>
+        <div className="row g-4 mt-1">
+          <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div className="achievement-card">
+              <i className="fa-solid fa-arrows-turn-to-dots"></i>
+              <p>Migrated SutiAP from a legacy monolith to a modern microservices architecture with a React TypeScript frontend.</p>
             </div>
           </div>
-
-          <div className="resume-card p-4 d-flex mt-4 " data-aos="zoom-in" data-aos-duration="1000">
-            <div className="resume-icon">
-              <i className="fa-solid fa-user-graduate"></i>
-            </div>
-            <div className="resume">
-              <p>2016 - 2018 | 86.5%</p>
-              <h5>Intermediate (MPC)</h5>
-              <h6>Himaja Junior College, Puttur</h6>
-              <p>Studied Mathematics, Physics, and Chemistry, developing strong logical
-                 and analytical thinking skills.</p>
+          <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div className="achievement-card">
+              <i className="fa-solid fa-handshake"></i>
+              <p>Integrated 3 major ERP platforms — QuickBooks Online, Sage Intacct &amp; NetSuite — via OAuth2 SutiAPI.</p>
             </div>
           </div>
-
-          <div className="resume-card p-4 d-flex mt-4 " data-aos="zoom-in" data-aos-duration="1000">
-            <div className="resume-icon">
-              <i className="fa-solid fa-user-graduate"></i>
+          <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div className="achievement-card">
+              <i className="fa-solid fa-vial-circle-check"></i>
+              <p>Achieved 90%+ code coverage through Test-Driven Development using JUnit and Mockito.</p>
             </div>
-            <div className="resume">
-              <p>2016 | 83%</p>
-              <h5>SSC (10th Grade)</h5>
-              <h6>Z.P. High School, T.K.M. Peta</h6>
-              <p>Completed secondary education with distinction, building the groundwork
-                 for a career in technology.</p>
+          </div>
+          <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div className="achievement-card">
+              <i className="fa-solid fa-layer-group"></i>
+              <p>Currently developing SutiERP — a central platform unifying 6+ SutiSoft products.</p>
             </div>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div>
-            <h4 className="maintitle text-center">Experience</h4>
-          </div>
+      </div>
 
-          <div className="resume-card p-4 d-flex " data-aos="zoom-in" data-aos-duration="1000">
-            <div className="resume-icon">
-              <i className="fa-solid fa-desktop h3"></i>
-            </div>
-            <div className="resume">
-              <p>Jan 2026 - Present</p>
-              <h5>Java Backend Developer — SutiERP &amp; SutiBooks</h5>
-              <h6>SutiSoft Inc, Hyderabad</h6>
-              <p>Developing SutiERP, a central integration hub unifying 6+ SutiSoft products,
-                 and building cloud accounting modules for SutiBooks using Java 21/25, Spring Boot
-                 microservices, PostgreSQL, and React TypeScript. Implementing JWT and OAuth2 security
-                 and RESTful APIs for real-time financial data synchronization.</p>
-            </div>
-          </div>
-
-          <div className="resume-card p-4 d-flex mt-4 " data-aos="zoom-in" data-aos-duration="1000">
-            <div className="resume-icon">
-              <i className="fa-brands fa-uikit"></i>
-            </div>
-            <div className="resume">
-              <p>Dec 2024 - Dec 2025</p>
-              <h5>Junior Software Developer — SutiAP &amp; SutiAPI</h5>
-              <h6>SutiSoft Inc, Hyderabad</h6>
-              <p>Architected microservices-based integrations for QuickBooks Online, Sage Intacct,
-                 and NetSuite using OAuth2 via SutiAPI, enabling seamless bi-directional financial
-                 data sync with SutiAP. Owned end-to-end feature development with responsive
-                 React TypeScript UI and optimized API performance.</p>
-            </div>
-          </div>
-
-          <div className="resume-card p-4 d-flex mt-4 " data-aos="zoom-in" data-aos-duration="1000">
-            <div className="resume-icon">
-              <i className="fa-solid fa-code"></i>
-            </div>
-            <div className="resume">
-              <p>May 2024 - Nov 2024</p>
-              <h5>Software Developer Trainee — SutiAP</h5>
-              <h6>SutiSoft Inc, Hyderabad</h6>
-              <p>Contributed to SutiAP, a monolithic Spring MVC + JSP application for Accounts
-                 Payable automation. Developed JSP views and Spring MVC controllers, wrote optimized
-                 SQL/PL-SQL queries and procedures in Oracle/MySQL, and performed JUnit testing
-                 and code reviews.</p>
-            </div>
-          </div>
-        </div>
+      <div className="text-center mt-5">
+        <a href={sjnResume} download className="btn btn-primary resume-download-btn">
+          <i className="fa-solid fa-download me-2"></i><span>Download Resume</span>
+        </a>
       </div>
     </div>
   </section>
@@ -334,54 +380,60 @@ useEffect(() => {
   <section className="blog" id="blog">
     <div className="container">
       <div className="text-center">
-        <span className="subtitle">From My Blog</span>
+        <span className="subtitle">My Writing Journey</span>
         <div className="section-heading">
-          <h3 className="heading animated fadeIn">Blog &amp; <span> Articles</span> </h3>
+          <h3 className="heading animated fadeIn">Writing &amp; <span>Literature</span> </h3>
         </div>
       </div>
-      <div className="row">
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div className="blog-post d-flex p-3 align-items-center mt-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
-            <div className="blog-img">
-              <img className="mr-3 img-fluid" src="assets/images/blog/b01.jpg" alt=""/>
-            </div>
-            <div className="articles">
-              <p className="m-0">10 Mar 2023</p>
-              <h6 className="m-0">The Importance Of NLP</h6>
-            </div>
+
+      {/* Featured Novel */}
+      <div className="featured-book" data-aos="fade-up" data-aos-duration="1000">
+        <div className="featured-book-cover">
+          <i className="fa-solid fa-book-open"></i>
+        </div>
+        <div className="featured-book-info">
+          <span className="featured-tag">Featured Novel · నవల</span>
+          <h4>Amma Cheppina Kathalu</h4>
+          <p className="telugu-title">అమ్మ చెప్పిన కథలు</p>
+          <p className="featured-desc">
+            A heartfelt collection of stories inspired by the tales my mother told me —
+            woven with the warmth of Telugu culture, village life, and timeless moral
+            values passed down through generations. An ongoing work close to my heart.
+          </p>
+          <div className="featured-meta">
+            <span><i className="fa-solid fa-feather-pointed"></i> Written by Jyothinath Somisetti</span>
+            <span><i className="fa-solid fa-pen-nib"></i> Ongoing</span>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div className="blog-post d-flex p-3 align-items-center mt-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
-            <div className="blog-img">
-              <img className="mr-3 img-fluid" src="assets/images/blog/b02.jpg" alt=""/>
-            </div>
-            <div className="articles">
-              <p className="m-0">10 Mar 2023</p>
-              <h6 className="m-0">The Importance Of Life</h6>
-            </div>
+      </div>
+
+      {/* Other writings */}
+      <div className="row g-4 mt-2">
+        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div className="writing-card" data-aos="fade-up" data-aos-duration="1000">
+            <div className="writing-icon"><i className="fa-solid fa-feather"></i></div>
+            <span className="writing-type">Short Stories</span>
+            <h6>Kathalu — Telugu Short Stories</h6>
+            <p>A series of original Telugu short stories exploring human emotions,
+               relationships, and everyday life.</p>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div className="blog-post d-flex p-3 align-items-center mt-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
-            <div className="blog-img">
-              <img className="mr-3 img-fluid" src="assets/images/blog/b03.jpg" alt=""/>
-            </div>
-            <div className="articles">
-              <p className="m-0">10 Mar 2024</p>
-              <h6 className="m-0">The Importance Of AI</h6>
-            </div>
+        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div className="writing-card" data-aos="fade-up" data-aos-duration="1000">
+            <div className="writing-icon"><i className="fa-solid fa-heart"></i></div>
+            <span className="writing-type">Poetry</span>
+            <h6>Reflections &amp; Emotions</h6>
+            <p>Poems and verses capturing feelings, nature, and the beauty of
+               the Telugu language and its expressions.</p>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div className="blog-post d-flex p-3 align-items-center mt-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
-            <div className="blog-img">
-              <img className="mr-3 img-fluid" src="assets/images/blog/b01.jpg" alt=""/>
-            </div>
-            <div className="articles">
-              <p className="m-0">10 Apr 2024</p>
-              <h6 className="m-0">The Importance Of Telugu Language</h6>
-            </div>
+        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div className="writing-card" data-aos="fade-up" data-aos-duration="1000">
+            <div className="writing-icon"><i className="fa-solid fa-language"></i></div>
+            <span className="writing-type">Articles</span>
+            <h6>On Culture &amp; Technology</h6>
+            <p>Articles bridging my two worlds — the richness of Telugu culture
+               and the evolving world of technology.</p>
           </div>
         </div>
       </div>
