@@ -3,15 +3,16 @@ import "../css/Home.css";
 import { ReactTyped } from "react-typed";
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaInstagram, } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import SkillBar from "./SkillBar.jsx";
+import SkillCard from "./SkillCard.jsx";
 import  { useState } from 'react';
 import { useEffect } from 'react';
 
 
 
 import developerImage from "../assets/developer.png";
-import developercbImage from "../assets/developercb1.png";
-import sjnResume from "../assets/sjnresume.pdf";
+import sjnPortfolioImage from "../assets/SJN-Portfolio-Image.jpeg";
+import sjnAiPhoto from "../assets/SJN_AI_PHOTO.jpeg";
+import sjnResume from "../assets/Somisetti_Jyothinath_Experience.pdf";
 import ravanImg from '../assets/ravan.jpg';
 import mcaImg from '../assets/mca.jpg';
 import royalImg from '../assets/royal.jpeg';
@@ -85,11 +86,13 @@ useEffect(() => {
                   />
                 </h1>
                   <p>
-                    Passionate about building seamless and scalable web applications, 
-                    I specialize in creating user-friendly front-end experiences with 
-                    React and robust backend systems with Spring Boot. 
-                    Leveraging my expertise in Java, JavaScript, and modern full-stack technologies, 
-                    I deliver solutions that enhance user satisfaction and drive business success.
+                    Results-driven Java Full Stack Developer with 2+ years of hands-on
+                    experience building enterprise-grade web applications and ERP
+                    integrations at SutiSoft Inc. I specialize in Java 21/25, Spring Boot
+                    microservices, React TypeScript, and PostgreSQL — migrating legacy
+                    monolithic applications to modern microservices and integrating
+                    platforms like QuickBooks Online, Sage Intacct, and NetSuite via
+                    secure OAuth2-based APIs.
                   </p>
                 {/* Social icon */}
                  <div className="social-icon">
@@ -125,7 +128,7 @@ useEffect(() => {
             </div>
             <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12 order-1 order-lg-2">
               <div className="hero">
-                 <img src={developerImage} className="img-fluid" alt="Developer" />        
+                 <img src={sjnPortfolioImage} className="img-fluid" alt="Jyothi Nath SomiSetti" />        
               </div>
           </div>
           </div>
@@ -137,26 +140,26 @@ useEffect(() => {
       <div className="row g-4">
         <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
           <div className="single-counter">
-            <h4 className="counterup">55</h4>
-            <p>Happy Clients</p>
+            <h4 className="counterup">2+</h4>
+            <p>Years of Experience</p>
           </div>
         </div>
         <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
           <div className="single-counter">
-            <h4 className="counterup">13</h4>
-            <p>Award Winning</p>
+            <h4 className="counterup">6+</h4>
+            <p>SutiSoft Products</p>
           </div>
         </div>
         <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
           <div className="single-counter">
-            <h4 className="counterup">2</h4>
-            <p>Completed Projects</p>
+            <h4 className="counterup">3</h4>
+            <p>ERP Integrations</p>
           </div>
         </div>
         <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
           <div className="single-counter">
-            <h4 className="counterup">857</h4>
-            <p>Cup Of Coffees</p>
+            <h4 className="counterup">90%+</h4>
+            <p>Code Coverage</p>
           </div>
         </div>
       </div>
@@ -168,10 +171,10 @@ useEffect(() => {
       <div className="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
           <div className="developercb aos-init">
-            <img src={developercbImage} className="img-fluid mt-2" alt=""/>
-            <div className="">
+            <img src={sjnAiPhoto} className="img-fluid mt-2" alt="Jyothinath Somisetti"/>
+            <div className="about-name-tag">
               <h2 className="text-gradient text-2xl font-bold">Jyothinath Somisetti</h2>
-              <p className="designation">Jr.Software Developer</p>
+              <p className="designation">Java Full Stack Developer</p>
             </div>
           </div>
         </div>
@@ -181,16 +184,21 @@ useEffect(() => {
             <div className="section-heading">
               <h3 className="heading animated fadeIn">About <span>Me!</span> </h3>
             </div>
-            <p class="text-justify font-weight-light">I am a Java Full Stack Developer
-               skilled in Java, React, Spring Boot, and MySQL. 
-               I build responsive, high-quality web applications, 
-               focusing on seamless user experiences and efficient back-end solutions.
-                Passionate about coding, I aim to create innovative and reliable software that drives success.</p>
+            <p class="text-justify font-weight-light">I am a Java Full Stack Developer with
+               2+ years of professional experience at SutiSoft Inc, building enterprise-grade
+               web applications and ERP integrations. My expertise spans Java 21/25, Spring Boot
+               microservices, React TypeScript, and PostgreSQL. I design secure, scalable backend
+               services with JWT and OAuth2, and I'm experienced in migrating monolithic
+               applications to modern microservices architecture in Agile/Scrum environments.</p>
 
-            <SkillBar label="Java" percentage={80} colorClass="color-bg-primary-java" />
-            <SkillBar label="React JS" percentage={85} colorClass="color-bg-primary-react" />
-            <SkillBar label="SpringBoot" percentage={82} colorClass="color-bg-primary-spring" />
-            <SkillBar label="MySQL" percentage={70} colorClass="color-bg-primary-mysql" />
+            <div className="skill-cards-grid">
+              <SkillCard icon="fa-brands fa-java" label="Java 21 / 25" percentage={90} color="#f89820" />
+              <SkillCard icon="fa-solid fa-leaf" label="Spring Boot & Microservices" percentage={88} color="#6DB33F" />
+              <SkillCard icon="fa-brands fa-react" label="React TypeScript" percentage={85} color="#61DBFB" />
+              <SkillCard icon="fa-solid fa-database" label="PostgreSQL / SQL" percentage={82} color="#00B4D8" />
+              <SkillCard icon="fa-solid fa-shield-halved" label="JWT & OAuth2 Security" percentage={85} color="#ffb400" />
+              <SkillCard icon="fa-solid fa-code-branch" label="Git & GitLab / CI" percentage={83} color="#e24329" />
+            </div>
             <div className="mt-5">
               <a href={sjnResume} download className="btn btn-primary">
                 <span>Download CV</span>
@@ -222,11 +230,11 @@ useEffect(() => {
               <i className="fa-solid fa-user-graduate"></i>
             </div>
             <div className="resume">
-              <p>2023-2021</p>
-              <h5>Master Of Computer Applications</h5>
-              <h6>Siddharth Institutions Of Technology</h6>
-              <p>Completed Master's degree with strong focus on software development and database management.
-                 Gained hands-on experience in Java, React, and Spring Boot through projects and internships.</p>
+              <p>2021 - 2023 | 87.5%</p>
+              <h5>Master of Computer Applications (MCA)</h5>
+              <h6>Siddharth Institute of Engineering &amp; Technology, Puttur</h6>
+              <p>Completed Master's degree with a strong focus on software development,
+                 database management, and full-stack technologies including Java, Spring Boot, and React.</p>
             </div>
           </div>
 
@@ -235,11 +243,37 @@ useEffect(() => {
               <i className="fa-solid fa-user-graduate"></i>
             </div>
             <div className="resume">
-              <p>2018-2021</p>
-              <h5>Batchelor of Science</h5>
-              <h6>S V University</h6>
-              <p>Completed Bachelor's degree with solid foundation in scientific principles and analytical skills. 
-                Participated in projects and coursework that enhanced problem-solving and research abilities.</p>
+              <p>2018 - 2021 | 81%</p>
+              <h5>Bachelor of Science (B.Sc. Computers)</h5>
+              <h6>Himaja Degree College, Puttur</h6>
+              <p>Built a solid foundation in computer science fundamentals, programming,
+                 and analytical problem-solving.</p>
+            </div>
+          </div>
+
+          <div className="resume-card p-4 d-flex mt-4 " data-aos="zoom-in" data-aos-duration="1000">
+            <div className="resume-icon">
+              <i className="fa-solid fa-user-graduate"></i>
+            </div>
+            <div className="resume">
+              <p>2016 - 2018 | 86.5%</p>
+              <h5>Intermediate (MPC)</h5>
+              <h6>Himaja Junior College, Puttur</h6>
+              <p>Studied Mathematics, Physics, and Chemistry, developing strong logical
+                 and analytical thinking skills.</p>
+            </div>
+          </div>
+
+          <div className="resume-card p-4 d-flex mt-4 " data-aos="zoom-in" data-aos-duration="1000">
+            <div className="resume-icon">
+              <i className="fa-solid fa-user-graduate"></i>
+            </div>
+            <div className="resume">
+              <p>2016 | 83%</p>
+              <h5>SSC (10th Grade)</h5>
+              <h6>Z.P. High School, T.K.M. Peta</h6>
+              <p>Completed secondary education with distinction, building the groundwork
+                 for a career in technology.</p>
             </div>
           </div>
         </div>
@@ -253,12 +287,13 @@ useEffect(() => {
               <i className="fa-solid fa-desktop h3"></i>
             </div>
             <div className="resume">
-              <p>SutiAP/2024-2025</p>
-              <h5>Jr.Software Developer</h5>
-              <h6>Sutisoft.inc, Hyderabad</h6>
-              <p>Primarily worked on UI development using JSP and JSTL, implementing invoice processing and approval workflows. 
-                 Additionally contributed to backend development using Spring MVC, integrating business logic and ensuring 
-                 seamless interaction between frontend and backend components.</p>
+              <p>Jan 2026 - Present</p>
+              <h5>Java Backend Developer — SutiERP &amp; SutiBooks</h5>
+              <h6>SutiSoft Inc, Hyderabad</h6>
+              <p>Developing SutiERP, a central integration hub unifying 6+ SutiSoft products,
+                 and building cloud accounting modules for SutiBooks using Java 21/25, Spring Boot
+                 microservices, PostgreSQL, and React TypeScript. Implementing JWT and OAuth2 security
+                 and RESTful APIs for real-time financial data synchronization.</p>
             </div>
           </div>
 
@@ -267,12 +302,28 @@ useEffect(() => {
               <i className="fa-brands fa-uikit"></i>
             </div>
             <div className="resume">
-              <p>SutiAPI/2025-Present</p>
-              <h5>Backend Developer</h5>
-              <h6>Sutisoft.inc, Hyderabad</h6>
-              <p>Developing backend microservices for QuickBooks Online integration
-                 within the SutiAPI product. Implementing APIs and services to enable 
-                 seamless financial data synchronization and automation for accounting workflows.</p>
+              <p>Dec 2024 - Dec 2025</p>
+              <h5>Junior Software Developer — SutiAP &amp; SutiAPI</h5>
+              <h6>SutiSoft Inc, Hyderabad</h6>
+              <p>Architected microservices-based integrations for QuickBooks Online, Sage Intacct,
+                 and NetSuite using OAuth2 via SutiAPI, enabling seamless bi-directional financial
+                 data sync with SutiAP. Owned end-to-end feature development with responsive
+                 React TypeScript UI and optimized API performance.</p>
+            </div>
+          </div>
+
+          <div className="resume-card p-4 d-flex mt-4 " data-aos="zoom-in" data-aos-duration="1000">
+            <div className="resume-icon">
+              <i className="fa-solid fa-code"></i>
+            </div>
+            <div className="resume">
+              <p>May 2024 - Nov 2024</p>
+              <h5>Software Developer Trainee — SutiAP</h5>
+              <h6>SutiSoft Inc, Hyderabad</h6>
+              <p>Contributed to SutiAP, a monolithic Spring MVC + JSP application for Accounts
+                 Payable automation. Developed JSP views and Spring MVC controllers, wrote optimized
+                 SQL/PL-SQL queries and procedures in Oracle/MySQL, and performed JUnit testing
+                 and code reviews.</p>
             </div>
           </div>
         </div>
@@ -395,7 +446,7 @@ useEffect(() => {
               <p><i className="fa-solid fa-location-dot "></i></p>
               <div className="info-text">
                 <h6>Address</h6>
-                <p className="m-0">Chittoor,Andhra Pradesh</p>
+                <p className="m-0">Hyderabad, India</p>
               </div>
             </div>
             <div className="info-item d-flex my-4">
@@ -409,7 +460,7 @@ useEffect(() => {
               <p><i className="fa-regular fa-envelope"></i></p>
               <div className="info-text">
                 <h6>Email</h6>
-                <p className="m-0">somisettijyothinath@gmail.com</p>
+                <p className="m-0">somisettijyothinath482001@gmail.com</p>
               </div>
             </div>
           </div>

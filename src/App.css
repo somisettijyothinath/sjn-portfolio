@@ -19,3 +19,11 @@
   color: white;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .hero-text {
+    font-size: 1.2rem;
+  }
+}
